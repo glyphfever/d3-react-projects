@@ -8,17 +8,11 @@ export default defineConfig({
   base: '/d3-react-projects/',
 
   build: {
-    rolldownOptions: {
+    rollupOptions: {
       input: {
         main: resolve(import.meta.dirname, 'index.html'),
-        bar: resolve(
-          import.meta.dirname,
-          'projects/bar-chart/index.html'
-        ),
-        pie: resolve(
-          import.meta.dirname,
-          'projects/pie-chart/index.html'
-        ),
+        bar: resolve(import.meta.dirname, 'projects/bar-chart/index.html'),
+        pie: resolve(import.meta.dirname, 'projects/pie-chart/index.html'),
       },
     },
   },
