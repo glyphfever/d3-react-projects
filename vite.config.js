@@ -20,7 +20,7 @@ const projectEntries = Object.fromEntries(
 
 export default defineConfig({
   plugins: [react()],
-  base: '/d3-react-projects/',
+  base: '/d3-react/',
 
   build: {
     rollupOptions: {
