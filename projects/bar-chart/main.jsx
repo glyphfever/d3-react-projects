@@ -1,10 +1,15 @@
 
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import BarChart from './BarChart.jsx';
+import React from "react";
+import { createRoot } from "react-dom/client";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+import { Barplot } from "./BarChart.jsx";
+import { data } from "./data.js";
+
+createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BarChart />
+    <div style={{ padding: "20px", fontFamily: "Arial" }}>
+      <h2>Students Enrolled by Country</h2>
+      <Barplot data={data} />
+    </div>
   </React.StrictMode>
 );
